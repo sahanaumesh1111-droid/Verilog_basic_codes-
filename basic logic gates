@@ -1,0 +1,12 @@
+module basic_logic_gates(
+input a, b,
+output x,y,z,k,l,m,n
+)
+assign x=~a;
+assign y=a&b;
+assign z=a|b;
+assign k=~(a&b);
+assign l=~(a|b);
+assign m=(~a&b)|(a&~b);# a^b
+assign n=(~a&~b)|(a&b);
+endmodule
